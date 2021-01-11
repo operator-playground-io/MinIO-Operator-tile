@@ -18,6 +18,7 @@ You will see the MinIO's Login page as below :
 - Login to the console using access key and secret key as below :
 
  access key: admin
+ 
  secret key: secret@123456
 
 ![](_images/login-creds.PNG)
