@@ -1,0 +1,46 @@
+{
+   "name":"MinIO Operator Tutorial",
+   "appLayout":"accordion",
+   "appTheme":"g90",
+   "footer":"footer.md",
+   "tutorials":[
+      {
+         "description":" A User Guide for verification of MinIO Operator Installation",
+         "duration":"5 min",
+         "tutorial_name":"operator-installation-verification-tutorial.md",
+         "title":"MinIO Operator Installation Verification Tutorial"
+      },
+      {
+         "description":" MinIO Instance Creation tutorial",
+         "duration":"15 min",
+         "tutorial_name":"minio-instance-creation-tutorial.md",
+         "title":"MinIO Instance Creation tutorial"
+      },
+      {
+         "description":"How to access MinIO's console",
+         "duration":"15 min",
+         "tutorial_name":"minio-console.md",
+         "title":"Access MinIO's Console"
+      },
+      {
+         "description":"How to Connect to MinIO's Pod to access files uploaded in MinIO's bucket",
+         "duration":"15 min",
+         "tutorial_name":"connect-to-minio-pod-to-access-uploaded-files.md",
+         "title":"Connect to MinIO's Pod"
+      },
+      {
+         "description":"How to cleanup MinIO's Operator",
+         "duration":"10 min",
+         "tutorial_name":"cleanup.md",
+         "title":"Cleanup Tutorial"
+      }
+      
+   ],
+   "usefulLinks":[
+      {
+         "title":"MinIO Operator",
+         "description":"MinIO Operator ",
+         "url":"https://operatorhub.io/operator/minio-operator"
+      }
+   ]
+}
