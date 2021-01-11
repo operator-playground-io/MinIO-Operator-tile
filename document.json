@@ -1,0 +1,35 @@
+{
+  "name": "MinIO Operator",
+  "description": "MinIO Operator",
+  "logo": "_images/SalesStack.png",
+  "has_supporting_content": true,
+  "stack_id": "minio-operator",
+  "type": "stack",
+  "categories": ["Storage"],
+  "platform": "Kubernetes",
+  "cover": "cover.md",
+  "meta": {
+    "Monitoring": ["MinIo"],
+    "Type":[
+         "Operators"
+      ],
+    "Install time": ["5 minutes"]
+  },
+"deployment_information": {
+  "Operator Project": "N/A",
+  "Deployment Namespace": "my-minio-operator"
+},
+  "commands": [
+    {
+      "description": "Install Operator",
+      "exec": "kubectl create -f https://operatorhub.io/install/minio-operator.yaml"
+    }
+  ],
+  "display": [
+    {
+      "name": "Developer Dashboard",
+      "url": "##DNS.host##/codeserver",
+      "enabled": true
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-# MinIO-Operator-tile
+# MinIO Operator

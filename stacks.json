@@ -1,0 +1,23 @@
+{
+  "title": "MinIO Operator",
+  "description": "MinIO Operator",
+  "logo": "_images/SalesStack.png",
+  "enabled": true,
+  "category_label": [
+    "Operators"
+  ],
+  "document": "data-logging-stack",
+  "stack_id": "minio-operator",
+  "type": "stack",
+  "categories": [
+    "Storage"
+  ],
+  "is_certified": true,
+  "has_support": true,
+  "has_dataset": false,
+  "has_api": false,
+  "git_url": "https://github.com/aradhana14nov/MinIO-Operator-tile.git",
+  "git_commit": "a37545a413dfc18c12237bd91af11349fa31dc69",
+  "installTime": "5 minutes",
+  "isStacksSaved": true
+}
