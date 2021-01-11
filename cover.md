@@ -30,6 +30,8 @@ MinIO-Operator brings native MinIO, MCS, and KES support to Kubernetes.
 
 
 ### Architecture
+MinIO is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. Orchestration platforms like Kubernetes provide perfect cloud-native environment to deploy and scale MinIO.
+
 The following diagram describes the architecture of a MinIO deployed into Kubernetes:
 
 ![](_images/minio-on-kubernetes.PNG)
