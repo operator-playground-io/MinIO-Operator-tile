@@ -2,10 +2,12 @@
 
 ![Logo](_images/logo.png)
 
-MinIO is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. Orchestration platforms like Kubernetes provide perfect launchpad for MinIO to scale. MinIO is Open Source, Enterprise-Grade, Amazon S3 Compatible Object Storage. 
-MinIO-Operator brings native MinIO, MCS, and KES support to Kubernetes. 
 
-### Key features :
+### Overview:
+
+MinIO is a high performance distributed object storage server, designed for large-scale private cloud infrastructure. MinIO is designed in a cloud-native manner to scale sustainably in multi-tenant environments. Orchestration platforms like Kubernetes provide perfect launchpad for MinIO to scale. MinIO is Open Source, Enterprise-Grade, Amazon S3 Compatible Object Storage. 
+MinIO-Operator brings native MinIO, MCS and KES support to Kubernetes. 
+Some of the key features are:
 
 - SQL Select
 - Encryption & WORM
@@ -16,17 +18,11 @@ MinIO-Operator brings native MinIO, MCS, and KES support to Kubernetes.
 
 
 
-### MinIO-Operator currently supports following features:
+### Operator's features are as follows:
 
-- Configure the fundamentals of MinIO like versions, persistence, erasure code configuration, and replicas.
-- Launch MinIO Clusters with specific affinity, toleration and other pre-defined settings
-- Create and delete highly available distributed MinIO clusters
-- Automatic TLS: Deploy TLS enabled MinIO clusters with builtin certificate signing requests.
-- Expand an existing MinIO cluster	
-- Use a custom template for hostname discovery	
-- Use PodSecurityPolicy for MinIO Pods	
-- Deploy MCS with MinIO cluster	
-- Deploy KES with MinIO cluster
+**Deploy:** Launch MinIO Clusters with specific affinity, toleration and other pre-defined settings.
+**Automatic TLS:** Deploy TLS enabled MinIO clusters with builtin certificate signing requests.
+**Configure:** Configure the fundamentals of MinIO like versions, persistence, erasure code configuration, and replicas.
 
 
 ### Architecture
