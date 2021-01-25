@@ -24,7 +24,7 @@ Some of the key features are:
 
 **Automatic TLS:** Deploy TLS enabled MinIO clusters with builtin certificate signing requests.
 
-**Configure:** Configure the fundamentals of MinIO like versions, persistence, erasure code configuration, and replicas.
+**Configure:** Configure the fundamentals of MinIO like versions, persistence, erasure code configuration and replicas.
 
 
 ### Architecture
