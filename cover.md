@@ -21,7 +21,9 @@ Some of the key features are:
 ### Operator's features are as follows:
 
 **Deploy:** Launch MinIO Clusters with specific affinity, toleration and other pre-defined settings.
+
 **Automatic TLS:** Deploy TLS enabled MinIO clusters with builtin certificate signing requests.
+
 **Configure:** Configure the fundamentals of MinIO like versions, persistence, erasure code configuration, and replicas.
 
 
