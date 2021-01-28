@@ -23,7 +23,7 @@
          "title":"3: Access MinIO's Console"
       },
       {
-         "description":"Learn how to Connect to MinIO's Pod to access uploaded datafiles in MinIO's bucket",
+         "description":"Learn how to Connect to MinIO's Pod to access uploaded data files in MinIO's bucket",
          "duration":"15 min",
          "tutorial_name":"connect-to-minio-pod-to-access-uploaded-files.md",
          "title":"4: Connect to MinIO's Pod"
