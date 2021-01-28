@@ -79,9 +79,9 @@ Your bucket policy will be added.
 
 ![](_images/edit-policy-option-read-write.png)
 
-Once bucket policy is added, you can see the "Remove" button on created Bucket Policy using which we can remove the Bucket Policy.
+Once bucket policy is added, you can see the "Remove" button on created bucket policy to remove bucket policy.
 
-Also a new column of Bucket Policy is also added.
+Also a new column of Bucket Policy will be added.
 
 ![](_images/remove-bucket-policy.PNG)
 
