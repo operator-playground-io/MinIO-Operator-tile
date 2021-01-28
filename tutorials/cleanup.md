@@ -18,8 +18,7 @@ Example:
 
 Note: Here MinioInstance.yaml  is the CR of the MinIO Server Instance.
 
-Similarly,delete all the CRs.
- 
+
 
 ***Delete the operator by kubectl delete command:***
  
