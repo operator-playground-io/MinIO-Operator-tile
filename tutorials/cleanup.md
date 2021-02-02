@@ -8,15 +8,15 @@ description: This tutorial explains how to cleanup Operator
 
 
 
-***Delete the operator's CRs by kubectl delete commands :***
+***Delete the operator's custom resource by kubectl delete commands :***
 
 Example:
  
- ```copycommand
+ ```execute
  kubectl delete -f MinioInstance.yaml -n my-minio-operator
  ```
 
-Note: Here MinioInstance.yaml  is the CR of the MinIO Server Instance.
+Note: Here MinioInstance.yaml is the custom resource of the MinIO Server Instance.
 
 
 
@@ -25,7 +25,7 @@ Note: Here MinioInstance.yaml  is the CR of the MinIO Server Instance.
  
  Example:
  
- ```copycommand
+ ```execute
  kubectl delete -f https://operatorhub.io/install/minio-operator.yaml
  ```
  
@@ -35,9 +35,10 @@ Note: Here MinioInstance.yaml  is the CR of the MinIO Server Instance.
  
  Example:
  
-  ```copycommand
+  ```execute
   rm -rf MinioInstance.yaml
+  rm -rf MinioNodePortService.yaml
   ```
   
-  Similarly, you can delete rest of yaml files.
+ 
 
