@@ -1,13 +1,13 @@
 ---
-title: MinIO Operator cleanup Tutorial
-description: This tutorial explains how to cleanup Operator
+title: MinIO Operator clean-up 
+description: Learn how to cleanup the MinIO Operator resources.
 ---
 
 
-### Cleaning Up Operator
+### Cleaning Up MinIO Operator Resources
 
 
-***Delete the operator's custom resource by kubectl delete commands :***
+**Step 1: Delete the operator's Custom Resources by using `kubectl delete` commands as below.**
 
  
  ```execute
@@ -17,7 +17,7 @@ description: This tutorial explains how to cleanup Operator
 Note: Here MinioInstance.yaml is the custom resource of the MinIO Server Instance.
 
 
-***Delete the operator by kubectl delete command:***
+**Step 2: Delete the operator by using `kubectl delete` command as below.**
  
    
  ```execute
@@ -25,7 +25,7 @@ Note: Here MinioInstance.yaml is the custom resource of the MinIO Server Instanc
  ```
  
  
-***Delete all the yaml files:***
+**Step 3: Deleting the CSV resource.**
  
  
   ```execute
@@ -33,5 +33,6 @@ Note: Here MinioInstance.yaml is the custom resource of the MinIO Server Instanc
   rm -rf MinioNodePortService.yaml
   ```
   
- 
+ ### Conclusion
 
+You’ve successfully deleted all the MinIO operator resources.
