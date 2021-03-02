@@ -1,6 +1,6 @@
 ---
 title: Access MinIO Console
-description: Learn how to access Minios console.
+description: Learn how to access Minio console.
 ---
 
 ### Access MinIO Console 
