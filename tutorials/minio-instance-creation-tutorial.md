@@ -1,23 +1,27 @@
 ---
-title: MinIO Instance Creation tutorial
-description: This tutorial explains how create Instances for your MinIO Operator.
+title: MinIO Instance Creation
+description: Learn how to create an instance of your MinIO Operator.
 ---
 
-### Create MinIO Instance and Sevice to access MinIO Server
 
-Execute below command to create a secret with proper access-key and secret-key:
+
+### Create the Secret with proper access-key and secret-key
+
+-  Execute the command below to create a secret with proper access-key and secret-key.
 
 ```execute
 kubectl create secret generic minio-creds-secret --from-literal=accesskey=admin --from-literal=secretkey=secret@123456 --namespace my-minio-operator
 ```
 
-Output:
+The output should follow like this.
 
 ```
 secret/minio-creds-secret created
 ```
 
-### Create below yaml file to create MinIO Operator Instance
+### Create MinIO Instance
+
+**Step 1: Create the below yaml definition of the Custom Resource.**   
 
 ```execute
 cat <<'EOF' > MinioInstance.yaml
@@ -33,7 +37,7 @@ spec:
 EOF
 ```
 
-Execute below command to create MinIO Operator instance:
+**Step 2: Execute the command below to create MinIO Operator instance.**
 
 ```execute
 kubectl create -f MinioInstance.yaml -n my-minio-operator
@@ -45,13 +49,13 @@ You will see the following output:
 minioinstance.miniocontroller.min.io/minio created
 ```
 
-Check the Pods status:
+**Step 3: Check the Pods status.**
 
 ```execute
 kubectl get pods -n my-minio-operator
 ```
 
-You will see similar to this output:
+This should produce the below details.
 
 ```
 NAME                              READY   STATUS    RESTARTS   AGE
@@ -62,14 +66,14 @@ minio-3                           1/1     Running   0          115s
 minio-operator-6cccf9f587-72xcp   1/1     Running   0          17m
 ```
 
-Check all the kubernetes resources:
+**Step 4:  Check all the Kubernetes resources.**
 
 ```execute
 kubectl get all -n my-minio-operator
 ```
 
 
-You will see similar to this output:
+The following output gets displayed.
 
 ```
 NAME                                  READY   STATUS    RESTARTS   AGE
@@ -93,7 +97,9 @@ statefulset.apps/minio   4/4     2m8s
 
 ```
 
-### Create NodePort Service to access MinIO's Pod 
+### Create NodePort Service to access MinIO Server Pod 
+
+**Step 1: Create the below yaml definition of the Custom Resource to create `NodePort` Service.**   
 
 ```execute
 cat <<'EOF' > MinioNodePortService.yaml
@@ -111,13 +117,13 @@ spec:
 EOF
 ```
 
-Execute below command to create NodePort Service
+**Step 2: Execute below command to create NodePort Service.**
 
 ```execute
 kubectl create -f MinioNodePortService.yaml -n my-minio-operator
 ```
 
-Output:
+This should produce the following output.
 
 ```
 service/minio-service created
@@ -125,13 +131,13 @@ service/minio-service created
 
 ### Access MinIO's dashboard
 
-Execute below command to get the NodePort service:
+Step 1: Execute the command below to get the NodePort service.
 
 ```execute
 kubectl get svc -n my-minio-operator
 ```
 
-Output will be similar to below output:
+You should see the below output.
 
 ```
 NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
@@ -139,17 +145,17 @@ minio-hl-svc    ClusterIP   None            <none>        9000/TCP         84m
 minio-service   NodePort    10.107.138.82   <none>        9000:30205/TCP   81m
 ```
 
-The Port value for "minio-service" of Type NodePort is : 30205
+Here, the port number for "minio-service" of Type NodePort is 30205.
 
-We will use this port to access MinIO's Pod using below URL: 
+Step 2: Click on the link below to access MinIO dashboard from your browser.
 
-Click on http://##DNS.ip##:30205 to access MinIO's dashboard from your browser.
+http://##DNS.ip##:30205
 
-You will see the MinIO's Login page as below :
-
+This will redirect you to the Login Page as shown below.
 
  ![](_images/login-console.PNG)
 
 
+### Conclusion
 
-
+We are able to access MinIO's dashboard.
