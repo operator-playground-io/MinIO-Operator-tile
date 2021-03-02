@@ -131,7 +131,7 @@ service/minio-service created
 
 ### Access MinIO's dashboard
 
-Step 1: Execute the command below to get the NodePort service.
+**Step 1: Execute the command below to get the NodePort service.**
 
 ```execute
 kubectl get svc -n my-minio-operator
@@ -147,7 +147,7 @@ minio-service   NodePort    10.107.138.82   <none>        9000:30205/TCP   81m
 
 Here, the port number for "minio-service" of Type NodePort is 30205.
 
-Step 2: Click on the link below to access MinIO dashboard from your browser.
+**Step 2: Click on the link below to access MinIO dashboard from your browser.**
 
 http://##DNS.ip##:30205
 
