@@ -17,7 +17,7 @@
   "has_dataset": false,
   "has_api": false,
   "git_url": "https://github.com/aradhana14nov/MinIO-Operator-tile.git",
-  "git_commit": "9bba19a5a58b6d06fb265496bef8cc4b82a8d562",
+  "git_commit": "cdede93d143a9ce08d4cd5d617e0aa4eb309884e",
   "installTime": "5 minutes",
   "isStacksSaved": true
 }
