@@ -27,7 +27,7 @@ c. **Automatic TLS:** Deploy TLS enabled MinIO clusters with built-in certificat
 
 
 
-### Architecture
+### Architecture of MinIO Operator
 MinIO is designed for large-scale private cloud infrastructure and can be scaled sustainably in multi-tenant environments. 
 
 The following diagram describes the architecture of a MinIO deployed into Kubernetes:
